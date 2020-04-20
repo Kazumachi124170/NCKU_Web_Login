@@ -1,9 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 8080;
-app.get('/step1', (req, res) => {
-  res.send('hello world')
-})
+const port = 2057;
 
 app.listen(port, () => {
   console.log(`listening on port: ${port}`)
@@ -15,7 +12,6 @@ var members = [
 ];
 
 app.get('/login', (req, res)=>{
-  //console.log(req);
   //Check if username and password is right
   var exist=false;
   for(var i=0; i<members.length; i++){
